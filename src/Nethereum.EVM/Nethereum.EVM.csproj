@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
+<PropertyGroup>
+	<Description>Nethereum.EVM EVM Simulator and ByteCode utils</Description>
+	<AssemblyTitle>Nethereum.EVM</AssemblyTitle>
+	<Version>1.0.0-rc1</Version>
+	<TargetFrameworks>$(DefaultFrameworks)</TargetFrameworks>
+	<AssemblyName>Nethereum.EVM</AssemblyName>
+	<PackageId>Nethereum.EVM</PackageId>
+	<PackageTags>Netherum;Ethereum;Blockchain;EVM</PackageTags>
+</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nethereum.ABI\Nethereum.ABI.csproj" />
+    <ProjectReference Include="..\Nethereum.Hex\Nethereum.Hex.csproj" />
+    <ProjectReference Include="..\Nethereum.RPC\Nethereum.RPC.csproj" />
+    <ProjectReference Include="..\Nethereum.Signer\Nethereum.Signer.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+<Project>
+ <PropertyGroup>
+   <Authors>Juan Blanco;Nethereum contributors</Authors>
+   <PackageTags>Netherum;Ethereum;Blockchain;Crypto 2.0</PackageTags>
+   <PackageIconUrl>https://raw.githubusercontent.com/Nethereum/Nethereum/master/logos/logo64x64.png</PackageIconUrl>
+   <PackageIcon>images\logo64x64.png</PackageIcon>
+   <PackageProjectUrl>https://nethereum.com</PackageProjectUrl>
+   <RepositoryType>git</RepositoryType>
+   <RepositoryUrl>https://github.com/Nethereum/Nethereum</RepositoryUrl>
+   <Copyright>Nethereum.com (Juan Blanco) 2015-2022</Copyright>
+   <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+   <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+   <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+   <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+   <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+   <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+ </PropertyGroup>
+ 
+<PropertyGroup>
+  <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+</PropertyGroup>
+<ItemGroup>
+  <None Condition="Exists('..\..\LICENSE.md')" Include="..\..\LICENSE.md" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+</ItemGroup>
+<ItemGroup>
+    <None Condition="Exists('..\..\logos\logo64x64.png')"  Include="..\..\logos\logo64x64.png" Pack="true" Visible="false" PackagePath="images\logo64x64.png" />
+  </ItemGroup>
+</Project>
